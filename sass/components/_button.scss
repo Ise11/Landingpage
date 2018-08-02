@@ -9,6 +9,11 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -20,7 +25,6 @@
             opacity: 0;
         }
     }
-
 
     &:active,
     &:focus {
@@ -35,6 +39,15 @@
 
         &::after {
             background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
         }
     }
 
@@ -56,6 +69,7 @@
         animation-fill-mode: backwards;
     }
 }
+
 
 .btn-text {
     &:link,
