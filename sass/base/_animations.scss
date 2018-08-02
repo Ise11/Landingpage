@@ -1,46 +1,19 @@
-@keyframes moveInLeft {
+@keyframes ellipseRotate {
   0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  80 {
-    transform: translateX(2rem);
+    transform: rotate(-45deg);
   }
 
   100% {
-    opacity: 1;
-    transform: translate(0);
+    transform: rotate(-405deg);
   }
 }
 
-@keyframes moveInRight {
+@keyframes ellipseOrbit {
   0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  80 {
-    transform: translateX(-2rem);
+    transform: rotate(0);
   }
 
   100% {
-    opacity: 1;
-    transform: translate(0);
+    transform: rotate(360deg);
   }
-}
-
-@keyframes moveInBottom {
-
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-
 }
