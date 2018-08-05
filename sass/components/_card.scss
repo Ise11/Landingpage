@@ -25,18 +25,19 @@
 
     &--back {
       transform: rotateY(180deg);
+      background-image: linear-gradient(to right, $color-secondary, $color-grey-dark);
 
-      &-1 {
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-      }
-
-      &-2 {
-        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-      }
-
-      &-3 {
-        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-      }
+      // &-1 {
+      //   background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      // }
+      //
+      // &-2 {
+      //   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+      // }
+      //
+      // &-3 {
+      //   background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+      // }
     }
   }
 
@@ -59,19 +60,20 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    // background-image: linear-gradient(to right, $color-secondary, $color-grey-dark);
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+      background-image: linear-gradient(to right, $color-secondary, $color-grey-dark),
       url(../img/img2.jpg);
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+      background-image: linear-gradient(to right, $color-secondary, $color-grey-dark),
       url(../img/img3.jpg);
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+    background-image: linear-gradient(to right, $color-secondary, $color-grey-dark),
       url(../img/img2.jpg);
     }
   }
