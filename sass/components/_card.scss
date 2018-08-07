@@ -25,19 +25,7 @@
 
     &--back {
       transform: rotateY(180deg);
-      background-image: linear-gradient(to right, $color-secondary, $color-grey-dark);
-
-      // &-1 {
-      //   background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-      // }
-      //
-      // &-2 {
-      //   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-      // }
-      //
-      // &-3 {
-      //   background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-      // }
+      background-image: linear-gradient(to right, $color-grey-light-2, $color-grey-dark);
     }
   }
 
@@ -60,21 +48,20 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    // background-image: linear-gradient(to right, $color-secondary, $color-grey-dark);
 
     &--1 {
-      background-image: linear-gradient(to right, $color-secondary, $color-grey-dark),
-      url(../img/img2.jpg);
+      background-image: linear-gradient(to right, rgba($color-white, 0.4),rgba($color-white, 0.9)),
+      url(../img/tour-1.jpg);
     }
 
     &--2 {
-      background-image: linear-gradient(to right, $color-secondary, $color-grey-dark),
-      url(../img/img3.jpg);
+      background-image: linear-gradient(to right, rgba($color-white, 0.4),rgba($color-white, 0.9)),
+      url(../img/tour-2.jpg);
     }
 
     &--3 {
-    background-image: linear-gradient(to right, $color-secondary, $color-grey-dark),
-      url(../img/img2.jpg);
+    background-image: linear-gradient(to right, rgba($color-white, 0.4), rgba($color-white, 0.9)),
+      url(../img/tour-3.jpg);
     }
   }
 
@@ -96,24 +83,10 @@
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom,
+    rgba($color-secondary, .85),
+    rgba($color-grey-dark-2, .85));
 
-    &--1 {
-      background-image: linear-gradient(to right bottom,
-      rgba($color-secondary-light, .85),
-      rgba($color-secondary-dark, .85));
-    }
-
-    &--2 {
-      background-image: linear-gradient(to right bottom,
-      rgba($color-primary-light, .85),
-      rgba($color-primary-dark, .85));
-    }
-
-    &--3 {
-      background-image: linear-gradient(to right bottom,
-      rgba($color-tertiary-light, .85),
-      rgba($color-tertiary-dark, .85));
-    }
   }
 
   &__details {
@@ -163,10 +136,6 @@
   }
 
 
-
-
-
-  //@include respond(tab-port) {
   @media only screen and (max-width: 56.25em),
   only screen and (hover: none) {
 

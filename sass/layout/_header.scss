@@ -1,4 +1,4 @@
-.landing-page-container {
+.container {
   width: 100%;
   min-height: 50rem;
   height: 95vh;
@@ -24,17 +24,8 @@
   position: relative;
 }
 
-.header {
-  width: 100%;
-  height: 2rem;
-  padding: 3rem 0;
-  display: block;
 
-  &__item {
-    display: inline-block;
-    float: left;
-  }
-}
+
 
 .heading {
   width: 90%;
@@ -51,36 +42,9 @@
   margin: 0 auto;
   position: relative;
   top: 7rem;
-
-  .greeting {
-    position: relative;
-    top: 14rem;
-    left: -6rem;
-    right: 0;
-    margin: 0 auto;
-    text-transform: uppercase;
-    letter-spacing: 4rem;
-    font-size: 8rem;
-    font-weight: 400;
-    opacity: .7;
-
-
-
-    &:after {
-      content: '';
-      width: .3rem;
-      height: .3rem;
-      border-radius: 50%;
-      display: inline-block;
-      background-color: $color-primary;
-      position: relative;
-      top: -0.65rem;
-      left: -5.05rem;
-
-    }
   }
 
-}
+
 
 .ellipse {
   border-radius: 50%;
@@ -141,6 +105,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+@media(max-width: 700px) {
+  .ellipse {
+    display: none;
   }
 }
 
